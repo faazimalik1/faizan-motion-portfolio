@@ -424,7 +424,7 @@
   const panel = document.querySelector("#big-question .reveal");
   if (panel && "IntersectionObserver" in window) { const observer = new IntersectionObserver(entries => entries.forEach(entry => entry.target.classList.toggle("show", entry.isIntersecting)), {threshold:.18}); observer.observe(panel); } else if(panel) panel.classList.add("show");
   const showreelVideo = document.querySelector("#showreel video");
-  if (showreelVideo) showreelVideo.muted = true;
+  if (showreelVideo) { showreelVideo.muted = true; showreelVideo.setAttribute("autoplay", ""); }
   if (showreelVideo && "IntersectionObserver" in window) {
     const showreelObserver = new IntersectionObserver(entries => entries.forEach(entry => {
       if (entry.isIntersecting) showreelVideo.play().catch(() => {});
