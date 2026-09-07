@@ -2,7 +2,7 @@
 
 ## Upload to GitHub
 
-1. Extract `Faizan_Malik_Portfolio_Compact_Gallery_GitHub_Ready.zip`.
+1. Extract `Faizan_Malik_Portfolio_With_Showreel_GitHub_Ready.zip`.
 2. Open your existing `faizan-motion-portfolio` repository on GitHub.
 3. Choose **Add file → Upload files** in the branch/folder used by GitHub Pages.
 4. Upload the extracted contents, including the entire `assets` folder. Do not upload the ZIP itself or an extra enclosing folder.
@@ -52,3 +52,15 @@ Live browser and Vimeo playback testing were not performed in this revision.
 ## Featured designs
 
 The four main-page cards use `data-design` values 5, 2, 9 and 6 (zero-based indexes in gallery.js). Change only those cards to curate a different front-page selection. Keep the complete collection in the overlay and update the visible collection count if you add images.
+
+## Featured showreel
+
+Your approved 60-second showreel now sits directly below the hero, before the moving banner and Selected Work. The old Portfolio Videos callout has been removed.
+
+The video and poster are included in `assets/video/`. Upload this entire folder with the website. The player has play/pause, seeking, volume and fullscreen controls, and works inline on mobile. Playback starts when the visitor chooses; the page does not preload the MP4. The showreel contains music and on-screen text, with no spoken dialogue.
+
+For a future video update, replace `assets/video/faizan-malik-showreel.mp4` using the same filename. Replace `assets/video/showreel-poster.jpg` to change the poster.
+
+
+## UI/UX portfolio
+A compact Grel card follows Graphic Design. Its full case study is in `projects/grel/index.html`, with a screen-based prototype and downloadable PDF. Upload the complete `projects` folder along with the other site files. To edit the homepage summary, find `id="uiux"` in index.html. Case-study content is editable in projects/grel/index.html. This is a concept redesign; prices are illustrative and no user-research results are claimed.
