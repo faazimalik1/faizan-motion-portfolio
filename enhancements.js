@@ -14,7 +14,7 @@
   }
   const collection=$('#collection-dialog'), collectionTrigger=$('#open-collection');
   const syncScrollLock=()=>document.body.classList.toggle('modal-open',collection.open||$('#design-dialog').open);
-  collectionTrigger.addEventListener('click',()=>{collection.showModal();collection.scrollTop=0;syncScrollLock();});
+  collectionTrigger.addEventListener('click',()=>{opener=collectionTrigger;show(0);dialog.showModal();document.body.classList.add('modal-open');});
   $('#collection-close').addEventListener('click',()=>collection.close());
   collection.addEventListener('close',()=>{syncScrollLock();collectionTrigger.focus();});
   collection.addEventListener('click',e=>{if(e.target!==collection)return;const r=collection.getBoundingClientRect();if(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom)collection.close();});
