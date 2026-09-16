@@ -49,7 +49,7 @@
     track.style.setProperty("--ticker-distance", `${sourceWidth}px`);
     track.style.setProperty(
       "--ticker-duration",
-      `${Math.max(46, sourceWidth / 34).toFixed(2)}s`,
+      `${Math.max(24, sourceWidth / 58).toFixed(2)}s`,
     );
   };
 
